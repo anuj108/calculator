@@ -17,3 +17,23 @@ for (item of buttons) {
     }
   });
 }
+
+function chargebattery() {
+  var a;
+  a = document.getElementById("charging");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+    a.innerHTML = "&#xf243;";
+  }, 30000);
+  setTimeout(function () {
+    a.innerHTML = "&#xf242;";
+  }, 30000);
+  setTimeout(function () {
+    a.innerHTML = "&#xf241;";
+  }, 30000);
+  setTimeout(function () {
+    a.innerHTML = "&#xf240;";
+  }, 100);
+}
+chargebattery();
+setInterval(chargebattery, 70000);
