@@ -61,8 +61,18 @@ input {
   color: white;
   background-color: #383737;
   border: 0px;
+  
 }
 .container h1 {
   color: rgb(218, 204, 81);
   font-family: sans-serif;
 }
+/* code to get a click effect in buttons */
+button {
+  opacity:0.8;
+}
+button:active {
+  box-shadow: 0  ;
+  transform: translateY(1px);
+}
+button:hover {opacity: 1;}
